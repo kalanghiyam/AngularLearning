@@ -1,0 +1,12 @@
+<div>
+  Template Driven From:
+  <br>
+  <div>
+      <form #simpleForm="ngForm" (ngSubmit)="submitForm(simpleForm.value)">
+          First Name: <input type="text" name="firstName" [(ngModel)]="fname"><br><br>
+          Last Name: <input type="text" name="lastName" [(ngModel)]="lname">
+
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+</div>
